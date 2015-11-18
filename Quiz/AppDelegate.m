@@ -13,7 +13,7 @@
 
 @end
 
-@implementation AppDelegate3
+@implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
