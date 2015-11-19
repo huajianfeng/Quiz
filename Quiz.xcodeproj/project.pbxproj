@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6C035881BFD9AC6007FCFAE /* libLSMediaCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C035871BFD9AC6007FCFAE /* libLSMediaCapture.a */; };
 		E6D2D1831BA2CD2100709C90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2D1821BA2CD2100709C90 /* main.m */; };
 		E6D2D1861BA2CD2100709C90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2D1851BA2CD2100709C90 /* AppDelegate.m */; };
 		E6D2D1891BA2CD2100709C90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2D1881BA2CD2100709C90 /* ViewController.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E6C035871BFD9AC6007FCFAE /* libLSMediaCapture.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLSMediaCapture.a; sourceTree = "<group>"; };
 		E6D2D17D1BA2CD2100709C90 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D2D1811BA2CD2100709C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6D2D1821BA2CD2100709C90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6C035881BFD9AC6007FCFAE /* libLSMediaCapture.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,7 @@
 		E6D2D17F1BA2CD2100709C90 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				E6C035871BFD9AC6007FCFAE /* libLSMediaCapture.a */,
 				E6D2D1841BA2CD2100709C90 /* AppDelegate.h */,
 				E6D2D1851BA2CD2100709C90 /* AppDelegate.m */,
 				E6D2D1871BA2CD2100709C90 /* ViewController.h */,
@@ -360,6 +364,10 @@
 				INFOPLIST_FILE = Quiz/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quiz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -371,6 +379,10 @@
 				INFOPLIST_FILE = Quiz/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quiz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
